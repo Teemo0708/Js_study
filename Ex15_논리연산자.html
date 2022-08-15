@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 논리연산자
+        // || : or 둘 중 한가지 조건만 만족하면 true // 첫 번째 true를 만나면 평가 중단
+        // && : and 두 조건을 모두 만족해야 true // 첫 번째 false를 만나면 평가 중단
+        // ! : not
+
+        // ㅇㅇ이 있고 ㅁㅁ가 좋으며 00인 사람 : 각 변수가 참일 확률이 ㅇㅇ = 80%, ㅁㅁ = 60%, 00 = 7%
+                                              // 라고 할때 낮은 확률의 조건을 먼저 배치하는 것이 효율적
+        // 00이면서 ㅁㅁ가 좋고 ㅇㅇ이 있는 사람 -> 이런 식으로 배치하면 첫 판단에서 93%의 경우를 걸러냄
+
+
+        //이름이 Mike이거나 성인이면 톧과
+         const name = prompt("이름을 입력해주세요");
+         const age = prompt("나이를 입력해주세요");
+
+         if(name=="Mike" || age>19){
+            alert("환영합니다.");
+         }else{
+            alert("저쪽 문으로 나가주세요.")
+         }
+
+    </script>
+</body>
+</html>
