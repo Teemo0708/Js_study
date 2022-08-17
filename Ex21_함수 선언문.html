@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const name = prompt("이름을 입력해주세요");
+
+        sayHello(name);
+
+       //Javascript는 실행시 변수와 함수 선언문 부터 읽기 때문에 아래에서 선언을 해도 된다 (hoisting)
+       // 함수 선언문 
+       function sayHello(name){
+        console.log(`Hello, ${name}`);
+       }
+
+    </script>
+</body>
+</html>

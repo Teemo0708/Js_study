@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let champ = prompt("어떤 챔피언을 선택하시겠습니까?");
+
+       switch(champ){
+
+        case '티모':
+            console.log("티모를 선택하셨습니다");
+            break; // case 이후에 만나는 코드를 전부 실행하기 때문에 break를 걸어줘야함
+        case '벡스':
+            console.log("벡스를 선택하셨습니다");
+            break;
+        case '케넨':
+            console.log("케넨을 선택하셨습니다");
+            break;
+        case '룰루':
+            console.log("룰루를 선택하셨습니다");   
+            break;     
+        default: // case 이외의 값을 입력한 경우 출력
+            console.log("해당 챔피언은 사용불가 입니다.");
+
+       }
+    </script>
+</body>
+</html>
