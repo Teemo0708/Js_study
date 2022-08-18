@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const name = prompt("이름을 입력해주세요");
+        
+        sayHello(); // Hello, friend 출력
+        sayHello(name); // Hello, name 출력
+
+       //Javascript는 실행시 변수와 함수부터 읽기 때문에 아래에서 선언을 해도 된다
+
+       function sayHello(name = "friend"){ // name에 friend를 선언해 파라미터가 없을때 출력해줄
+                                            // default값을 설정해 줄 수 있다
+
+        let msg = `Hello, ${name}`; // 파라미터가 없을때와 있을 경우 
+                                    //msg 값에 변화가 생기므로 let으로 선언해준다
+        console.log(msg);
+       }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       
+       // 함수 표현식 
+       // 함수 표현식은 호이스팅 되지 않고 해당 지점에 도달했을 때 부터 함수가 선언되고 적용된다
+       let sayHello = function(name){
+        console.log(`Hello, ${name}`);
+       }
+       const name = prompt("이름을 입력해주세요");
+       sayHello(name);
+
+    </script>
+</body>
+</html>
